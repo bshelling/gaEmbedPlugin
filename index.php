@@ -75,8 +75,8 @@ function analyticsPage(){?>
 		echo"<p></p>";
 		echo"<input id='removeCode' class='button button-primary button-large' type='submit' value='Update Code' />";
 		echo"</form>";
-		echo"<p>To obtain a tracking code visit <a href='#'>Google Analytics Tracking Code</a></p>";
-		echo"<p>GA Tracking Code Embed v.1 <br>For contact <a href='#'>info@bshelling.com</a></p>";
+		echo"<p>To obtain a tracking code visit <a href='https://www.google.com/analytics/'>Google Analytics Tracking Code</a></p>";
+		echo"<p>GA Tracking Code Embed v.1 <br>For contact <a href='mailto:info@bshelling.com'>info@bshelling.com</a></p>";
 	}
 	add_menu_page('analytics page','Google Analytics','manage_options','ga_settings','settingsForm','dashicons-chart-area',77);
 }
