@@ -2,11 +2,26 @@
 /**
 * Plugin Name: BCS GA Tracking Code Embed
 * Plugin URI: http://www.github.com/bshelling
-* Description: Easily adds Google Tracking Code to website
+* Description: Easily adds Google Tracking Code to WP website
 * Version: 1.0
 * Author: Bshelling
 * Author URI: http://www.bshelling.com
-* License:
+* License:one line to give the program's name and an idea of what it does.
+*Copyright (C) 2015  bshelling
+*
+*This program is free software; you can redistribute it and/or
+*modify it under the terms of the GNU General Public License
+*as published by the Free Software Foundation; either version 2
+*of the License, or (at your option) any later version.
+*
+*This program is distributed in the hope that it will be useful,
+*but WITHOUT ANY WARRANTY; without even the implied warranty of
+*MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+*GNU General Public License for more details.
+*
+*You should have received a copy of the GNU General Public License
+*along with this program; if not, write to the Free Software
+*Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.
 */
 
 
@@ -69,14 +84,14 @@ function analyticsPage(){?>
 		echo"<code id='status'></code>";
 		echo"<form method='post' action=''>";
 		echo"<label id='inputLabel'>Enter Google Analytics Tracking ID</label>";
-		echo"<input name='gaCode' id='gaCode' value='".$value."'/>";
+		echo"<input name='gaCode' placeholder='UA-xxxxxxxx-x' id='gaCode' value='".$value."'/>";
 		echo"<p></p>";
 		echo"<input id='submitCode' class='button button-primary button-large' type='submit' value='Save Analytics Code' />";
 		echo"<p></p>";
 		echo"<input id='removeCode' class='button button-primary button-large' type='submit' value='Update Code' />";
 		echo"</form>";
-		echo"<p>To obtain a tracking code visit <a href='https://www.google.com/analytics/'>Google Analytics Tracking Code</a></p>";
-		echo"<p>GA Tracking Code Embed v.1 <br>For contact <a href='mailto:info@bshelling.com'>info@bshelling.com</a></p>";
+		echo"<p>To obtain a tracking code visit <a href='#'>Google Analytics Tracking Code</a></p>";
+		echo"<p>GA Tracking Code Embed v.1 <br>For contact <a href='#'>info@bshelling.com</a></p>";
 	}
 	add_menu_page('analytics page','Google Analytics','manage_options','ga_settings','settingsForm','dashicons-chart-area',77);
 }
@@ -95,3 +110,6 @@ function gaCode(){
 
 }
 add_action('wp_footer','gaCode');
+
+
+
